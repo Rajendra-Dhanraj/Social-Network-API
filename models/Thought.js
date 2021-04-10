@@ -57,7 +57,10 @@ const ThoughtSchema = new Schema(
   }
 );
 
-// virtuals goes here to get reply count
+// virtuals goes here to get reactions count
+ThoughtSchema.virtual('reactionsCount').get(function() {
+    return this.reactions.length;
+  });
 
 const Thought = model("Thought", ThoughtSchema);
 
