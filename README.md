@@ -34,21 +34,17 @@ GET request on a single user:
 
 ![Screenshot1](./images/screenshot1.png)
 
-GET request on a single thought :
+GET request on a single thought:
 
 ![Screenshot1](./images/screenshot2.png)
 
-POST requiest to create a user:
+POST request to create a user:
 
 ![Screenshot1](./images/screenshot3.png)
 
 POST request to add a reaction:
 
 ![Screenshot1](./images/screenshot4.png)
-
-GET request on all thoughts:
-
-![Screenshot1](./images/screenshot5.png)
 
 ### Demonstration
 
