@@ -17,7 +17,7 @@ const UserSchema = new Schema(
     thoughts: [
       {
         type: Schema.Types.ObjectId, //expect an object id from thoughts. Array of _id values referencing the Thought model
-        ref: "Thoughts",
+        ref: "Thought",
       },
     ],
     friends: [
