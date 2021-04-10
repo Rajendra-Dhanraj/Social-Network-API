@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(require("./routes"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/social-network", { //  tells Mongoose which database we want to connect to. 
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/social-network-api", { //  tells Mongoose which database we want to connect to. 
   useFindAndModify: false,
   useNewUrlParser: true,
   useUnifiedTopology: true,
