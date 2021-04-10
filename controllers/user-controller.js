@@ -4,12 +4,12 @@ const userController = {
   // GET ALL USERS
   getAllUsers(req, res) {
     User.find({})
-      // .populate({
-      //   //adds comments
-      //   path: "thoughts",
-      //   select: "-__v",
-      // })
-      // .select("-__v")
+      .populate({
+        //adds comments
+        path: "thoughts",
+        select: "-__v",
+      })
+      .select("-__v")
       .sort({ _id: -1 }) // newest user returns first
       .then((dbUserData) => res.json(dbUserData))
       .catch((err) => {
