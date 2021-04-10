@@ -9,7 +9,6 @@ const {
   addFriend,
   removeFriend,
 } = require("../../controllers/user-controller");
-// const { update } = require("../../models/User");
 
 // all user routes
 router

@@ -44,7 +44,7 @@ const userController = {
       .catch((err) => res.status(400).json(err));
   },
 
-  // update pizza by id
+  // update user by id
   updateUser({ params, body }, res) {
     User.findOneAndUpdate({ _id: params.id }, body, { new: true }) //return new version of the document
       .then((dbUserData) => {
