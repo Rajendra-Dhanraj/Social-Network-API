@@ -35,13 +35,7 @@ const UserSchema = new Schema(
   }
 );
 
-// virtual to tally thoughts with its replies goes here!
-//
-//
 
-// virtual to tally friends count
-//
-//
 
 // create the User model using the UserSchema
 const User = model("User", UserSchema);
